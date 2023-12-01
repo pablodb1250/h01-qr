@@ -16,7 +16,7 @@ use Altum\Title;
 class Qr extends Controller {
 
     public function index() {
-
+        // exit("entra");
         $qr_code_settings = require APP_PATH . 'includes/qr_code.php';
 
         $type = isset($this->params[0]) && array_key_exists($this->params[0], $qr_code_settings['type']) ? $this->params[0] : null;

@@ -1,5 +1,5 @@
 qr.zip
 config.php
 debug.log
-error.log
+error_log
 /vendor
