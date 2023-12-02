@@ -72,6 +72,14 @@
                         </div>
 
                         <div>
+                            <div class="form-group" data-type="pdf">
+                                <label for="pdf"><i class="fa fa-fw fa-paragraph fa-sm mr-1"></i> <?= l('qr_codes.input.pdf') ?></label>
+                                <textarea id="pdf" name="pdf" class="form-control <?= \Altum\Alerts::has_field_errors('pdf') ? 'is-invalid' : null ?>" maxlength="<?= $data->qr_code_settings['type']['pdf']['max_length'] ?>" required="required" data-reload-qr-code><?= $data->qr_code->settings->pdf ?? null ?></textarea>
+                                <?= \Altum\Alerts::output_field_error('pdf') ?>
+                            </div>
+                        </div>
+
+                        <div>
                             <div class="form-group" data-type="url" data-url>
                                 <label for="url"><i class="fa fa-fw fa-link fa-sm mr-1"></i> <?= l('qr_codes.input.url') ?></label>
                                 <input type="url" id="url" name="url" class="form-control <?= \Altum\Alerts::has_field_errors('url') ? 'is-invalid' : null ?>" value="<?= $data->qr_code->settings->url ?? null ?>" maxlength="<?= $data->qr_code_settings['type']['url']['max_length'] ?>" required="required" data-reload-qr-code />
