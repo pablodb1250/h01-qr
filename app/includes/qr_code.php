@@ -16,6 +16,14 @@ return [
             'icon' => 'fa fa-paragraph',
             'max_length' => 2048
         ],
+        'pdf' => [
+            'icon' => 'fa fa-file',
+            'max_length' => 2048
+        ],
+        'url' => [
+            'icon' => 'fa fa-link',
+            'max_length' => 2048
+        ],        
         'url' => [
             'icon' => 'fa fa-link',
             'max_length' => 2048
