@@ -64,6 +64,13 @@ class QrCodeGenerator extends Controller {
                 $data = $_POST['text'];
                 break;
 
+                case 'pdf':
+                    // $_POST['archivo'] = filter_var($_POST['archivo'], FILTER_SANITIZE_STRING);
+                    $_POST['pdf'] = filter_var($_POST['pdf'], FILTER_SANITIZE_URL);
+                    $data = $_POST['pdf'];
+                    break;
+    
+    
             case 'url':
                 $_POST['url'] = filter_var($_POST['url'] ?? null, FILTER_SANITIZE_URL);
                 $data = $_POST['url'];
