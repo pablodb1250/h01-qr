@@ -78,7 +78,12 @@ class QrCodeUpdate extends Controller {
                     $settings['text'] = $_POST['text'] = mb_substr(trim(Database::clean_string($_POST['text'])), 0, $qr_code_settings['type']['text']['max_length']);
                     break;
 
-                case 'url':
+                case 'pdf':
+                    $required_fields[] = 'pdf';
+                    $settings['pdf'] = $_POST['pdf'] = mb_substr(trim(Database::clean_string($_POST['pdf'])), 0, $qr_code_settings['type']['pdf']['max_length']);
+                    break;
+    
+                    case 'url':
                     $required_fields[] = 'url';
                     $settings['url'] = $_POST['url'] = mb_substr(trim(Database::clean_string($_POST['url'])), 0, $qr_code_settings['type']['url']['max_length']);
 
