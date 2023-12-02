@@ -290,6 +290,8 @@ return [
 
     'qr_codes.type.text' => 'Texto',
     'qr_codes.type.text_description' => 'Texto simple y claro incrustado en un código QR.',
+    'qr_codes.type.pdf' => 'PDF',
+    'qr_codes.type.pdf_description' => 'Sube y envía un archivo PDF enun código qr.',
     'qr_codes.type.url' => 'URL',
     'qr_codes.type.url_description' => 'Envía a alguien a un enlace.',
     'qr_codes.type.phone' => 'Teléfono',
@@ -322,6 +324,7 @@ return [
     'qr_codes.input.name' => 'Nombre',
     'qr_codes.input.type' => 'Tipo QR',
     'qr_codes.input.text' => 'Contenido del texto',
+    'qr_codes.input.pdf' => 'Archivo PDF',
     'qr_codes.input.url' => 'URL',
     'qr_codes.input.url_dynamic' => 'Código QR dinámico',
     'qr_codes.input.url_dynamic_help' => 'Habilitar esto creará un código QR que apunta a un enlace corto interno, que redirigirá a cualquier enlace especificado, dinámicamente.',

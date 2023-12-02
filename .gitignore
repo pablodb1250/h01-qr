@@ -2,4 +2,7 @@ qr.zip
 config.php
 debug.log
 error_log
+*/66qrcode
 /vendor
+/product
+.gitignore
